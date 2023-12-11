@@ -1,0 +1,43 @@
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 3px 30px 10px 30px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 70px
+  }
+  
+h2 {
+  color: rgb(35, 35, 184);
+  font-size: small;
+}
+  
+p {
+  color: black;
+  font-size:medium;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  top: -30px;
+  left: 60px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
