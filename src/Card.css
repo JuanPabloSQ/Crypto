@@ -6,7 +6,7 @@
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
-  width: 70px
+  width: 70px;
   }
   
 h2 {
@@ -26,6 +26,8 @@ p {
 
 .tooltip {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .tooltip .tooltiptext {

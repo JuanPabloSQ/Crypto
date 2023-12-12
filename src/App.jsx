@@ -6,7 +6,7 @@ function App() {
     <Card
     targetCurrency="CLP"
     baseCurrency="USD"
-    exchangeRate={100000651514654} />  
+    exchangeRate={100} />  
   </div>  
   )
 }
