@@ -1,8 +1,6 @@
-import data from "./data.json";
 import "./Card.css"
 
-const Card = () => {
-  const { baseCurrency, targetCurrency, exchangeRate } = data;
+const Card = ({baseCurrency, targetCurrency, exchangeRate}) => {
 
   const formatNumber = (number) => {
     const formattedNumber = new Intl.NumberFormat("es-CL", {style: "currency",currency: targetCurrency, minimumFractionDigits: 0,maximumFractionDigits: 2,
