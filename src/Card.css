@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 3px 30px 10px 30px;
-  margin: 16px;
+  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   width: 70px
@@ -12,6 +12,7 @@
 h2 {
   color: rgb(35, 35, 184);
   font-size: small;
+  margin-left: -20px;
 }
   
 p {
@@ -19,6 +20,8 @@ p {
   font-size:medium;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-left: -20px;
+  
 }
 
 .tooltip {
