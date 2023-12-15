@@ -8,7 +8,7 @@ function App() {
 
   const getData = async () => {
     try{
-      await new Promise(resolve => setTimeout(resolve, 4000));
+      await new Promise(resolve => setTimeout(resolve, 1000));
     } catch (error) {
       console.log(error)
     } finally {

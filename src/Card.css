@@ -2,17 +2,34 @@
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 3px 10px 10px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   height: 120px;
   width: 150px;
   }
+
+.skeleton-card h2 {
+  margin-top: 20px;
+  margin-bottom: -5px;
+  margin-left: 7px;
+}
+
+.skeleton-card h1 {
+  margin: 7px;
+  margin-bottom: -5px;
+}
+
+.skeleton-card p {
+  margin: 7px;
+}
   
+
+
 h2 {
   color: rgb(35, 35, 184);
   font-size: small;
-  margin-left: -20px;
+  margin-left: 5px
+
 }
   
 p {
@@ -20,7 +37,7 @@ p {
   font-size:medium;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-left: -20px;
+
   
 }
 
