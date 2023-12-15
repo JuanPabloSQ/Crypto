@@ -1,16 +1,12 @@
 
-import React,{useEffect, useState} from "react";
 import "./Card.css";
+import Skeleton from '@mui/material/Skeleton';
+import {useEffect, useState} from "react";
 
 
-
-// const [data, setData] = useState ()
-// const [isLoading, setIsLoading] = useState(false)
-
-// const getData
+const Card = ({ baseCurrency, targetCurrency, exchangeRate, item, isLoading }) => {
 
 
-const Card = ({ baseCurrency, targetCurrency, exchangeRate, item }) => {
   const formatNumber = (number) => {
     const formattedNumber = new Intl.NumberFormat("es-CL", {
       style: "currency",
@@ -26,12 +22,18 @@ const Card = ({ baseCurrency, targetCurrency, exchangeRate, item }) => {
 
   return (
     <div className="card">
+       {isLoading ? (
+        <Skeleton variant="rectangular" width={150} height={120} />
+      ) : (
+        <>
       <h2>{baseCurrency}/{targetCurrency}</h2>
       <div className="tooltip">
         <span className="tooltiptext">{formattedExchangeRate} </span>
         <p>{formattedExchangeRate}   
         </p>
       </div>
+      </>
+      )}
     </div>
   );
 };

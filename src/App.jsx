@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from "react";
 import Card from "./Card.jsx"
-import Skeleton from '@mui/material/Skeleton';
+
 
 
 function App() {
@@ -23,15 +23,12 @@ function App() {
 
   return (
     <div>
-      {isLoading ? (
-        <Skeleton variant="rectangular" width={150} height={120} />
-      ) : (
         <Card
+          isLoading= {isLoading}
           targetCurrency="CLP"
           baseCurrency="USD"
           exchangeRate={100.057}
         />
-      )}
     </div>
   );
 }
